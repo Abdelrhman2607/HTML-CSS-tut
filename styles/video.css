@@ -36,9 +36,26 @@
 }
 .vid-preview-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
     column-gap: 16px;
+}
+
+@media (max-width: 900px) {
+    .vid-preview-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 901px)  and (max-width: 1149px){
+    .vid-preview-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1150px) {
+    .vid-preview-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .vid-preview{
@@ -48,12 +65,11 @@
 .vid-time{
     background-color: black;
     padding: 4px;
-    font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
     border-radius: 3px;
     color: white;
     position: absolute;
-    top: 110px;
+    bottom: 105px;
     right: 5px;
 }
