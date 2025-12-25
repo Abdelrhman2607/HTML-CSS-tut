@@ -9,6 +9,7 @@
     right: 0px;
     background-color: white;
     border-bottom: 1px solid lightgray;
+    z-index: 1;
 }
 
 .left-section{
@@ -107,3 +108,18 @@
     border-radius: 16px;
 }
 
+.notif-frame{
+    position: relative;
+}
+
+.notif-count{
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    position: absolute;
+    padding: 2px 6px 2px 6px;
+    border-radius: 9px;
+    top: -4px;
+    right: -5px;
+}
